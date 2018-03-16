@@ -1,0 +1,48 @@
+.App {
+  padding: 15px;
+  padding-top: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.TableCell {
+  position: relative;
+}
+
+.TableCell_inputWrapper,
+.TableCell_textWrapper {
+  padding-right: 24px;
+}
+
+.TableCell_textWrapper {
+  padding: 5px 24px 5px 5px;
+}
+
+.TableCell_icon-edit,
+.TableCell_icon-check {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  cursor: pointer;
+}
+
+.TableCell_icon-edit {
+  line-height: 18px;
+  display: none;
+}
+
+.TableCell_icon-check {
+  line-height: 28px;
+}
+
+.TableCell:hover .TableCell_icon-edit {
+  display: inline-block;
+}
+
+.TableCell_icon-edit:hover,
+.TableCell_icon-check:hover {
+  color: #108ee9;
+}
