@@ -30,14 +30,14 @@ export default class App extends Component {
       dataIndex: 'fullname',
       render: fullname => `${fullname.name} ${fullname.surname}`
     }, {
-      title: 'operation',
-      dataIndex: 'Операции',
+      title: 'Операции',
+      dataIndex: 'operation',
       render: (text, record) => {
         return (
           this.state.dataSource.length > 1 ?
           (
             <Popconfirm title='Вы точно хотите удалить?' onConfirm={() => this.onDelete(record.key)}>
-              <a href='#'>Удалить</a>
+              <a href='#'>Delete</a>
             </Popconfirm>
           ) : null
         )
