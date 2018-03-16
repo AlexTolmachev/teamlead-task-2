@@ -37,7 +37,7 @@ export default class App extends Component {
           this.state.dataSource.length > 1 ?
           (
             <Popconfirm title='Вы точно хотите удалить?' onConfirm={() => this.onDelete(record.key)}>
-              <a href='#'>Delete</a>
+              <a href='#'>удалить</a>
             </Popconfirm>
           ) : null
         )
